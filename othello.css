@@ -1,0 +1,165 @@
+othello.css
+body {
+    background: linear-gradient(135deg, #000000, #13073fb9); 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; 
+    font-size: 50px;
+    padding: 20px;
+    box-shadow: 2px 4px 7px rgba(255, 255, 255, 0.2); 
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+
+.content-wrapper {
+    background-color: #bdbbbb;
+    padding: 30px;
+    border-radius: 15px;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.welcome {
+    font-size: 30px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.know-othello {
+    font-size: 20px;
+}
+
+.othello-img {
+    margin: 20px 0;
+}
+
+.instructions{
+    box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.2); 
+    margin: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.7); 
+    width: 100%; 
+    display: inline-block; 
+    border-radius: 10px;
+}
+
+.about-othello{
+    box-shadow: 2px 4px 7px rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.7); 
+    display: inline-block; 
+    border-radius: 10px;
+
+}
+
+.info-list {
+    list-style: none; 
+    padding: 0;
+    margin: 20px 0; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.step {
+    background-color: rgba(255, 255, 255, 0.7); 
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    width: 100%; 
+    display: inline-block;
+    vertical-align: top; 
+}
+
+.step-paragraph {
+    font-size: 25px;
+    padding: 10px;
+    color: black;
+}
+
+.play{
+    font-size: 25px;
+    padding: 10px;
+    color: black;
+}
+
+.step-number {
+    float: left;
+    width: 0.7em;
+    font-size: 400%;
+    font-family: Algerian, Courier;
+    line-height: 80%;
+    color: red;
+}
+
+.game-board {
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+    gap: 5px;
+    width: fit-content;
+    padding: 5px;
+    margin-top: 10px;
+    position:relative;
+}
+
+a:link{
+    color : green;
+    background-color :transparent;
+    text-decoration: none;
+}   
+a:visited {
+color:red;
+background-color: transparent;
+text-decoration: none;
+}
+a:hover {
+color: violet;
+background-color: transparent;
+text-decoration: underline;
+}
+a:active {
+color: yellow;
+background-color: transparent;
+text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        width: 90%;
+    }
+
+    .nav-bar {
+        font-size: 30px;
+    }
+
+    .welcome,
+    .step-paragraph {
+        font-size: 20px;
+    }
+
+    .game-board {
+        grid-template-columns: repeat(8, 50px);
+        grid-template-rows: repeat(8, 50px);
+    }
+}
+
