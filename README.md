@@ -1,1 +1,0 @@
-# new-gwethe-othello-game
