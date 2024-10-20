@@ -93,3 +93,14 @@ createBoard(board4, [36],[19,27,28,35], [],[18,20,34]);
 createBoard(board5,[34,35,36,],[19,27,28],[],[]);
 
 
+// scripts.js
+document.addEventListener('DOMContentLoaded', function () {
+    const cookieBanner = document.getElementById('cookieConsent');
+    const acceptButton = document.getElementById('acceptCookies');
+
+    // When the accept button is clicked
+    acceptButton.addEventListener('click', function () {
+        cookieBanner.style.display = 'none'; // Hide the banner
+    });
+});
+

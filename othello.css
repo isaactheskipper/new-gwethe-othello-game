@@ -1,12 +1,12 @@
-othello.css
 body {
-    background: linear-gradient(135deg, #000000, #13073fb9); 
+    background: linear-gradient(135deg, #272727, #000000b9);
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
+
 
 .nav-bar {
     display: flex;
@@ -16,27 +16,26 @@ body {
     font-size: 50px;
     padding: 20px;
     box-shadow: 2px 4px 7px rgba(255, 255, 255, 0.2); 
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7); 
     border-radius: 10px;
+    font-weight: bold;
+
 }
 
-
 .content-wrapper {
-    background-color: #bdbbbb;
+    background-color: #bdbbbb; 
     padding: 30px;
     border-radius: 15px;
-    width: 60%;
+    width: 60%; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
 
 .general {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 .welcome {
     font-size: 30px;
@@ -50,19 +49,22 @@ body {
 
 .othello-img {
     margin: 20px 0;
+    border-radius: 30px;
+
+
 }
 
 .instructions{
     box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.2); 
     margin: 40px 20px;
     background-color: rgba(255, 255, 255, 0.7); 
-    width: 100%; 
+    width: 95%; 
     display: inline-block; 
     border-radius: 10px;
 }
 
 .about-othello{
-    box-shadow: 2px 4px 7px rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 4px 7px rgba(255, 255, 255, 0.2); 
     background-color: rgba(255, 255, 255, 0.7); 
     display: inline-block; 
     border-radius: 10px;
@@ -71,7 +73,7 @@ body {
 
 .info-list {
     list-style: none; 
-    padding: 0;
+    padding: 0; 
     margin: 20px 0; 
     display: flex; 
     flex-direction: column; 
@@ -85,9 +87,10 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
     width: 100%; 
-    display: inline-block;
+    display: inline-block; 
     vertical-align: top; 
 }
+
 
 .step-paragraph {
     font-size: 25px;
@@ -109,6 +112,7 @@ body {
     line-height: 80%;
     color: red;
 }
+
 
 .game-board {
     background-color: green;
@@ -143,6 +147,35 @@ background-color: transparent;
 text-decoration: underline;
 }
 
+.cookie-banner p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.cookie-banner a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.cookie-banner button {
+    background-color: #f90;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cookie-banner button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.cookie-banner.hide {
+    display: none;
+}
+
+
 @media (max-width: 768px) {
     .content-wrapper {
         width: 90%;
@@ -162,3 +195,20 @@ text-decoration: underline;
         grid-template-rows: repeat(8, 50px);
     }
 }
+
+.cookie-banner {
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+
